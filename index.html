@@ -7,12 +7,29 @@
   </head>
   <body>
     <div id="root">
-      <script>
+      <!-- Core React.js -->
+      <script
+        crossorigin
+        src="https://unpkg.com/react@18/umd/react.development.js"
+      ></script>
+      <!-- React Library used for DOM Manipulations -->
+      <script
+        crossorigin
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      ></script>
+
+      <!-- <script>
         const heading = document.createElement('h1')
         heading.innerHTML = 'Hello World!'
         const root = document.getElementById('root')
         root.appendChild(heading)
-      </script>
+      </script> -->
     </div>
+
+    <script>
+      const heading = React.createElement("h1", {}, "Hello World!");
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(heading);
+    </script>
   </body>
 </html>
