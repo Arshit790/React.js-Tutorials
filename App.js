@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom";
 // Nested Elements
 // For passing siblings => we have to pass the array of childrens in 3rd parameter
 const parent = React.createElement("div", { id: "parent" }, [
